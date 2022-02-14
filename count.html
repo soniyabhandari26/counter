@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="counter.css">
+	<link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<title>Counter</title>
+</head>
+<body>
+	<div class="counter">
+
+		<div class="counter1">
+
+			<div class="counts1">
+				<i class="fa fa-youtube-play" aria-hidden="true"></i>
+			</div><br>
+
+			<div id="count1"></div>
+            
+            <h4>Subscribers</h4>
+
+		</div>
+	
+
+
+	<div class="counter2">
+			
+			<div class="counts2">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</div><br>
+
+			<div id="count2"></div>
+            
+            <h4>Followers</h4>
+
+		</div>
+
+		<div class="counter3">
+			
+			<div class="counts3">
+				<i class="fa fa-facebook-official" aria-hidden="true"></i>
+			</div><br>
+
+			<div id="count3"></div>
+            
+            <h4>Shares</h4>
+
+		</div>
+
+    </div>
+
+    <script type="text/javascript">
+    	let counts = setInterval(update,10);
+    	// let counts2 = setInterval(update);
+    	// let counts3 = setInterval(update);
+  	       let x = 0;
+  	       let y = 0;
+  	       let z = 0;
+  	       function update(){
+  	       	let a = document.getElementById('count1');
+            
+            x = x+12;
+            a.innerHTML = x++;
+  	       	if(x>=2000){
+                        x=1988;
+                    }
+
+
+  	       	let b = document.getElementById('count2');
+
+            y = y+15;
+  	       	b.innerHTML = y++;
+  	       	if(y>=2490){
+                        y=2485;
+                    }
+
+
+  	       	let c = document.getElementById('count3');
+  	       	
+  	       	z = z+25;
+  	       	c.innerHTML = z++;
+  	       	if(z>=2998){
+                        z = 2975;
+                    }
+  	       }   
+    </script>
+
+</body>
+</html>

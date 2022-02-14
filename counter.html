@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="counter.css">
+	<link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<title>Counter</title>
+</head>
+<body>
+	<div class="counter">
+
+		<div class="counter1">
+
+			<div class="counts1">
+				<i class="fa fa-youtube-play" aria-hidden="true"></i>
+			</div><br>
+
+			<div id="count1">
+				<script type="text/javascript">
+  	            let counts=setInterval(updated,0.5);
+                let upto=0;
+                function updated(){
+                    var count= document.getElementById("count1");
+                    count.innerHTML=++upto;
+                    if(upto===1000){
+                        clearInterval(counts);
+                    }
+                }
+            </script>
+			</div>
+            
+            <h4>Subscribers</h4>
+
+		</div>
+	
+
+
+	<div class="counter2">
+			
+			<div class="counts2">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</div><br>
+
+			<div id="count2">
+				<script type="text/javascript">
+  	            let counts2=setInterval(updated2,0.5);
+                let upto2=0;
+                function updated2(){
+                    var count= document.getElementById("count2");
+                    count.innerHTML=++upto2;
+                    if(upto2===1000){
+                        clearInterval(counts2);
+                    }
+                }
+            </script>
+			</div>
+            
+            <h4>Followers</h4>
+
+		</div>
+
+		<div class="counter3">
+			
+			<div class="counts3">
+				<i class="fa fa-facebook-official" aria-hidden="true"></i>
+			</div><br>
+
+			<div id="count3">
+				<script type="text/javascript">
+  	            let counts3=setInterval(updated3,0.5);
+                let upto3=0;
+                function updated3(){
+                    var count= document.getElementById("count3");
+                    count.innerHTML=++upto3;
+                    if(upto3===1000){
+                        clearInterval(counts3);
+                    }
+                }
+            </script>
+			</div>
+            
+            <h4>Shares</h4>
+
+		</div>
+
+    </div>
+
+</body>
+</html>
